@@ -1,0 +1,618 @@
+/*************************************
+	Enyo Overrides
+**************************************/
+
+.enyo-bg { background-color: white; }
+.enyo-toolbar { background-color: #919191; }
+
+
+/*************************************
+	Main View
+**************************************/
+
+.mainView .appHeader {
+	background: #202020;
+	/*border-bottom: 1px solid #c2c2c2;*/
+}
+
+.mainView .appToolbar {
+	background: #1c1c1c;
+	color: #d6d6d6;
+}
+
+.mainView .appToolbar .temperature {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 15px 0 15px;
+}
+
+.mainView .appToolbar .location {
+	font-size: 11px;
+}
+
+.mainView .articleButton {
+	border-right: 1px solid #d7d7d7;
+	color: #646565;
+	font-weight: bold; 
+	font-size: 17px;
+	padding: 10px;
+	width: 290px;
+	height: 147px;
+}
+
+.mainView .articleButton img {
+	margin-right: 20px;
+}
+
+.mainView .articleButton .video {
+	background-image: url('../images/video_play_small.png'); 
+	background-repeat: no-repeat; 
+	background-position: left bottom; 
+	position: absolute;
+	margin: -5px 5px;
+}
+
+.mainView .ledeArticleButton .video {
+	height: 150px !important;
+}
+
+.mainView .foreheadScroller {}
+
+.mainView .foreheadButton {
+	padding: 0;
+	margin-right: 3px;
+}
+
+.mainView .foreheadButton .title {
+	position:absolute; 
+	bottom: -1px;
+}
+
+.mainView .infoButton {
+	-webkit-border-image: none;
+	background-image: url("../images/bg_infoButton.png");
+	border-width: 0;
+	border-radius: 0;
+	border-right: 1px solid #222222;
+	border-left: 1px solid #373737;
+	color: #d6d6d6;
+	font-size: 14px;
+	margin: 0;
+}
+
+.mainView .infoButton .scores {
+	background-image: url('../images/button_Scores.png');
+	background-repeat: no-repeat;
+	margin-top: -4px;
+}
+
+.mainView .infoButton .markets {
+	background-image: url('../images/button_Markets.png');
+	background-repeat: no-repeat;
+	margin-top: -4px;
+}
+
+.mainView .infoButton .weather {
+	background-image: url('../images/button_Weather.png');
+	background-repeat: no-repeat;
+	margin-top: -4px;
+	width: 27px;
+}
+
+
+.mainView .ledeArticleButton {
+	background: #DDDDDD;
+	color: #333333;
+	font-size: 22px;
+	height: 147px;
+	width: 428px;
+	border-right: 3px solid #d7d7d7;
+	padding: 0;
+}
+
+.mainView .ledeArticleButton div {
+	padding: 0 20px 0 10px;
+}
+
+.mainView .ledeArticleButton.home { background: #dde9f1; border-right: 3px solid #238bd9; }
+.mainView .ledeArticleButton.money { background: #e0ebe2; border-right: 3px solid #1c8126;}
+.mainView .ledeArticleButton.sports { background: #f1dfde; border-right: 3px solid #d60e03;}
+.mainView .ledeArticleButton.life { background: #ece0e8; border-right: 3px solid #850d5e;}
+.mainView .ledeArticleButton.tech { background: #f4e7df; border-right: 3px solid #cd5001;}
+.mainView .ledeArticleButton.travel { background: #daecf1; border-right: 3px solid #1e9cc5;}
+
+
+.mainView .articleScroller {
+	background-image: url("../images/article_scroller_bg.png");
+	margin-top: 2px;
+	height: 151px;
+}
+
+.mainView .sectionButton {
+	display: block;
+	margin-bottom: 4px;
+}
+
+/*************************************
+	Application
+**************************************/
+
+a {
+	color: #00009c;
+	text-decoration: none;
+}
+
+body {
+	background-color: #1C1C1C;
+}
+
+content {
+	background-color: white;
+}
+
+.blackButton {
+	color: #FFF;
+	background: #000;
+	font-weight: bold;
+	padding: 4px 8px 3px 8px;
+}
+
+.gradient-snapshots {
+    background: #2390e0;
+	background: 
+			-webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, rgb(35, 144, 224)),
+				color-stop(1, rgb(16, 120, 196))
+			);
+    background:-moz-linear-gradient(top, #2e97e6, #0067b3);
+    -webkit-border-image: none;
+}
+
+.gradient-money {
+	background: #53b66b;
+	background: 
+			-webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0.22, rgb(83, 182, 107)),
+				color-stop(0.61, rgb(28, 137, 39))
+			);
+
+	background:-moz-linear-gradient(top, #53b66b, #1c8927);
+	 -webkit-border-image: none;
+}
+
+.gradient-sports {
+    background: #f4b824;
+    background: 
+            -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                color-stop(0, rgb(249, 80, 70)),
+                color-stop(1, rgb(228, 16, 3))
+            );
+            
+    background:-moz-linear-gradient(top, #fb5754, #e40d00);
+    -webkit-border-image: none;
+}
+
+.gradient-weather {
+	background: #f3b644;
+	background: 
+			-webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, rgb(244, 184, 36)),
+                color-stop(1, rgb(223, 141, 24))
+			);
+			
+	background:-moz-linear-gradient(top, #f3b644, #d18704);
+	-webkit-border-image: none;
+}
+
+.refreshButton {
+	-webkit-border-image: none;
+	border-width: 0;
+	border-radius: 0;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.filteredItemCaption {
+	font-size: 16px;
+}
+
+
+/*************************************
+	Weather
+**************************************/
+
+.weatherView {
+	color: #666666;
+}
+
+.weatherView .weatherBox {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.weatherView .currentBox {
+	text-align: center;
+	margin-right: 50px;
+}
+
+.weatherView .currentTemp {
+	font-size: 60px;
+	margin-left: 10px;
+}
+
+.weatherView .drawer {
+	padding: 0 5px 0px 5px;
+	border-bottom: 1px solid #bbbbbb;
+}
+
+.weatherView .closeDrawer {
+	margin-bottom: 10px;
+}
+
+.weatherView .webView {
+	margin-top: 5px;
+}
+
+.weatherView .title {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.weatherView .location {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.weatherView .locationInfo {
+	font-size: 18px;
+}
+
+.weatherView .fiveDayItem {
+	border-left: 1px solid #e1e1e1;
+	font-size: 16px;
+	padding: 5px 10px 5px 15px;
+	width: 80px;
+}
+
+.weatherView .fiveDayItem:nth-child(1) {
+	border-left: none;
+	padding-left: 5px;
+}
+
+.weatherView .fiveDayItem .temps {
+	padding: 3px;
+	font-weight: bold;
+}
+
+.weatherView .mapScroller {
+	background: #e1e1e1;
+	border-top: 2px solid #bbbbbb;
+	border-bottom: 2px solid #bbbbbb;
+	margin: 15px 0 15px 0;
+}
+
+.weatherView .mapScroller .mapItem {
+	margin: 10px 5px 10px 10px;
+}
+
+.weatherView .mapScroller .mapItem img {
+	margin-top: 5px;
+}
+
+
+
+.articleImageButton {
+	float:right; 
+	margin: 10px;
+	border-bottom: 1px solid #dddddd;
+	width: 300px;
+	font-size: 70%;
+	padding-bottom: 5px;
+}
+
+.articleImageButton .video {
+	background-image: url('../images/video_play_large.png'); 
+	background-repeat: no-repeat; 
+	background-position: left bottom; 
+	position: absolute;
+	margin: -5px 5px;
+}
+
+
+.mainArticleScroller {
+	background: #ffffff;
+	/*
+	background: #f5f5f5;
+	background-image: url("../images/main-shadow.png"); 
+	background-repeat: repeat-x;
+	*/
+}
+
+
+.articleView {
+	color: #333333; 
+	font-size: 17px;
+}
+
+.articleHeader {
+	border-bottom: 1px solid #bababa;
+	font-size: 140%;
+	margin: 0 5px 10px 5px;
+	padding: 10px 0 0 10px;
+}
+
+.articleBodyScroller {
+	margin: 10px 20px 10px 20px;
+}
+
+.articleTitle {
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	font-size: 32px;
+	margin: 0;
+}
+
+.imageWrapper {
+	border: 1px solid #bebebe;
+	background: #bebebe;
+	background-image: url('../images/image-placeholder.png');
+	background-repeat: no-repeat;
+}
+
+.photoGalleryView {
+	background: #000;
+}
+
+.photoGalleryView .count {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 3px;
+}
+
+.galleryButton {
+	font-size: 10px;
+	margin: 3px;
+	text-align: center;
+}
+
+.galleryButton img {
+	background: #CCCCCC;
+	border: 1px solid #CCCCCC; 
+	width: 50px;
+	height: 50px;
+}
+
+.galleryCaption {
+	font-size: 16px;
+	margin: 0 15px 0 15px;
+}
+
+.galleryCaption b {
+	font-size: 12px;
+}
+
+.galleryFooter {
+	background: rgba(0, 0, 0, 0.8);
+	border-top: 1px solid #464646;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	color: #EEEEEE;
+	padding: 5px;
+	z-index: 2;
+}
+
+.galleryHeader {
+	background: rgba(0, 0, 0, 0.5);
+	color: #EEEEEE;
+	padding: 5px;
+}
+
+/*************************************
+	Scores
+**************************************/
+
+.scoresView {}
+
+.scoresView .matchCell {
+	border: none;
+	border-top: 1px solid #cdcdcd;
+	box-shadow: none;
+	margin-right: 0;
+	padding: 5px;
+	-webkit-box-shadow: none;
+}
+
+.scoresView .scoresMatchScroller {
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.scoresView .matchScore {
+	height: 38px;
+	font-weight: bold;
+}
+
+.scoreMatchBox {
+	font-size: 18px;
+	height: 120px;
+	margin: 0 10px 0 0;
+}
+
+.scoreMatchBox img {
+	margin: 5px;
+}
+
+.scoreMatchBox .matchStatus {
+	text-align: right;
+	font-size: 14px;
+}
+
+.scoreMatchBox .name {
+	
+}
+
+.scoresTitleBox {
+	font-weight: bold;
+	border-top: 1px solid #d2d2d2;
+	border-right: none !important;
+	width: 100%;
+}
+
+.scoresView .tabBar {
+	margin: 15px;
+}
+
+.scoresView .allTimes {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+
+.snapshotsView .tabBar {
+	margin: 15px;
+}
+
+.snapshotsView .snapshot {
+	margin: 10px 0 10px 90px;
+}
+
+.snapshotsView .snapshotsBox, .snapshotsView .quickQuestion {
+	margin: 15px;
+}
+
+.snapshotsView .qqText {
+	font-weight: bold;
+}
+
+.snapshotsView .qqButton {
+	font-size: 18px;
+	margin: 10px 3px;
+}
+
+.snapshotsView .qqProgressBar .enyo-progress-bar {
+	-webkit-border-image: none;
+	height: 15px;
+	margin-bottom: 8px;
+}
+
+.snapshotsView .qqProgressBar .text {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.snapshotsView .qqProgressBar .enyo-progress-bar-inner {
+	margin: 2px 0;
+}
+
+
+/*************************************
+	About
+**************************************/
+.aboutView {
+	background: #FFFFFF;
+}
+
+.aboutView .list {
+	border: 1px solid #cccccc;
+}
+
+
+
+/*************************************
+	Money
+**************************************/
+
+.red {
+	color: #FF0000;
+}
+
+.green {
+	color: #53b66b;
+}
+
+
+.tickerListBox {
+	background: #e5e6e8;
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 10px 5px;
+	padding: 5px;
+}
+
+.tickerListBox .tickerTitle {
+	font-weight: bold;
+	height: 25px;
+	margin: 0 10px;
+}
+
+.tickerListBox .tickerItem {
+	font-size: 16px;
+	padding: 8px 3px 5px 14px;
+	height: 45px;
+}
+
+.tickerListBox .tinyDescription {
+	color: #666;
+	font-size: 14px;
+	margin: 0 5px;
+}
+
+.tickerListBox .moveButton {
+	min-height: 10px;
+	padding: 0;
+	margin: 0;
+	min-width: 25px;	
+}
+
+.tickerListBox .upArrow {
+	background-image: url('../images/markets_upArrow.png');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	width: 14px;
+	height: 22px;
+}
+
+.tickerListBox .itemValue {
+	font-weight: bold;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.companyName {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0 0 0 5px;
+}
+
+.tickerSymbol {
+	font-size: 16px;
+	margin: 0 0 0 5px;
+}
+
+.tickerValuesBox {
+	margin: 5px;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+}
+
+.tickerValueTitle {
+	font-size: 12px;
+}
+
+.tickerValue {
+	font-weight: bold;
+	font-size: 24px;
+}

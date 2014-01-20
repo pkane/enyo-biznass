@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/WebOS/!svn/ver/210/USATODAY/trunk
+END
+test.html
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/WebOS/!svn/ver/170/USATODAY/trunk/test.html
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/WebOS/!svn/ver/41/USATODAY/trunk/.project
+END
+appinfo.json
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/WebOS/!svn/ver/187/USATODAY/trunk/appinfo.json
+END
+.buildpath
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/WebOS/!svn/ver/41/USATODAY/trunk/.buildpath
+END
+framework_config.json
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/WebOS/!svn/ver/72/USATODAY/trunk/framework_config.json
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/WebOS/!svn/ver/149/USATODAY/trunk/index.html
+END
+icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/WebOS/!svn/ver/121/USATODAY/trunk/icon.png
+END
+depends.js
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/WebOS/!svn/ver/208/USATODAY/trunk/depends.js
+END

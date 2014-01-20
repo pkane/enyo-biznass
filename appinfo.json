@@ -1,0 +1,27 @@
+{
+	"id": "com.usatoday.webos",
+	"version": "1.2.0",
+	"vendor": "USA TODAY",
+	"type": "web",
+	"main": "index.html",
+	"title": "USA TODAY",
+	"icon": "icon.png",
+	
+	"keywords": [
+	  "news",
+	  "money",
+	  "life",
+	  "sports",
+	  "tech",
+	  "travel",
+	  "weather",
+	  "scores",
+	  "photo",
+	  "video",
+	  "celebrities",
+	  "technology",
+	  "national"
+	],
+	
+	"uiRevision": 2
+}

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/WebOS/!svn/ver/173/USATODAY/trunk/app/services
+END
+ArticleVideoService.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/WebOS/!svn/ver/139/USATODAY/trunk/app/services/ArticleVideoService.js
+END
+PersistentWebService.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/WebOS/!svn/ver/173/USATODAY/trunk/app/services/PersistentWebService.js
+END
+Omniture.js
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/WebOS/!svn/ver/115/USATODAY/trunk/app/services/Omniture.js
+END
+WebServiceQueue.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/WebOS/!svn/ver/173/USATODAY/trunk/app/services/WebServiceQueue.js
+END
