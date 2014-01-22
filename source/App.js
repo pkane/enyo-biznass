@@ -1,6 +1,6 @@
 enyo.kind({
 	name: "App",
-	kind: "FittableRows",
+	kind: Component,
 	fit: true,
 	components:[
 		{kind: "onyx.Toolbar", content: "Hello World"},

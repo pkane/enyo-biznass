@@ -1,7 +1,5 @@
+/* Copyright 2009-2011 Hewlett-Packard Development Company, L.P. All rights reserved. */
 enyo.depends(
-	"$lib/layout",
-	// "$lib/onyx",	// To theme Onyx using Theme.less, change this line to $lib/onyx/source,
-	//"Theme.less",	// uncomment this line, and follow the steps described in Theme.less
 
 	"app/Config.js",
 	"app/Extensions.js",
@@ -9,7 +7,7 @@ enyo.depends(
 	
 	/* Stylesheets */	
 
-	"Main.css",
+	"stylesheets/Main.css",
 	
 	/* Views */	
 	"app/views/AboutView.js",
@@ -49,5 +47,4 @@ enyo.depends(
 	
 	"app/valueObjects/WeatherVO.js",
 	"app/valueObjects/ServiceState.js"
-	
 );
