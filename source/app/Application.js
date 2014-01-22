@@ -6,9 +6,10 @@
 	 
 *******************************/
 
-var Application = {
+enyo.kind({
 
-	kind: enyo.VFlexBox,
+	name: "Application",
+	kind: enyo.Component,
 
 	create: function() {
 		this.inherited(arguments);
@@ -194,4 +195,4 @@ var Application = {
 		this.$.scores.windowActivated();
 	}
 
-};
+});

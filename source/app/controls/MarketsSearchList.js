@@ -1,4 +1,4 @@
-enyo.kind({
+var MarketsSearchList = {
 	
 	name: "MarketsSearchList",
 	kind: "FilteredSearchList",
@@ -27,4 +27,4 @@ enyo.kind({
 		this.inherited(arguments);
 	}
 
-});
+};

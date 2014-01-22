@@ -1,7 +1,7 @@
-var AboutView = {
+enyo.kind({
 		
 		name: "AboutView",
-		kind: enyo.VFlexBox,
+		kind: enyo.FittableLayout,
 		classes: "aboutView",
 		
 		events: {
@@ -86,4 +86,4 @@ var AboutView = {
 				return true;
 			}
 		}		
-};
+});

@@ -1,4 +1,5 @@
 var FilteredSearchList = {
+	name: "FilteredSearchList",
 	kind: enyo.VFlexBox,
 	
 	filteredItems: [],
