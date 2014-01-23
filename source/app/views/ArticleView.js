@@ -1,5 +1,7 @@
-var ArticleView = {
-	kind: enyo.VFlexBox,
+enyo.kind({
+
+	name: "ArticleView",
+  	kind: "FittableRows",
 	
 	className: "articleView",
 
@@ -12,13 +14,8 @@ var ArticleView = {
 		/*	    
 		{kind: "PopupSlider", name: "fontSlider", lazy: true},
 		*/
-		
-		{ kind: "PalmService", service: "palm://com.palm.applicationManager/", components: [
-			{name: "launchApp", method: "launch"},
-			{name: "openApp", method: "open"}
-		]},		
 
-		{kind: "Menu", lazy: true, components: [
+		{kind: "UiComponent", lazy: true, components: [
 			{caption: "Facebook", onclick: "share", value: "facebook"},
 			{caption: "Twitter", onclick: "share", value: "twitter"},
 			{caption: "Email", onclick: "share", value: "email"}
@@ -185,4 +182,4 @@ var ArticleView = {
 		*/
 	}
 
-};
+});

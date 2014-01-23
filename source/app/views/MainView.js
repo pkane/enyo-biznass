@@ -1,5 +1,7 @@
-var MainView = {
-	kind: enyo.VFlexBox,
+enyo.kind({
+
+	name: "MainView",
+	kind: "FittableLayout",
 
 	className: "mainView",
 
@@ -275,4 +277,4 @@ var MainView = {
 		this.$.location.setContent(weatherVO.location);
 	}
 	
-};
+});

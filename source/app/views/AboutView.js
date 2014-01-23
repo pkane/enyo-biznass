@@ -1,7 +1,7 @@
 enyo.kind({
 		
 		name: "AboutView",
-		kind: enyo.FittableLayout,
+		kind: "FittableLayout",
 		classes: "aboutView",
 		
 		events: {

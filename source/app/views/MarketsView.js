@@ -1,5 +1,6 @@
-var MarketsView = {
-	kind: enyo.VFlexBox,
+enyo.kind({
+	name: "MarketsView",
+	kind: "FittableLayout",
 
 	markets: [],
 	stocks: [],
@@ -380,4 +381,4 @@ var MarketsView = {
 		}
 	}
 
-};
+});

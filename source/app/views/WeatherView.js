@@ -1,7 +1,8 @@
-var WeatherView = {
+enyo.kind({
 
-	kind: enyo.VFlexBox,
-	className: "weatherView",
+	name: "WeatherView",
+	kind: "FittableLayout",
+	classes: "weatherView",
 	
 	events: {
 		onChange: "",
@@ -360,4 +361,4 @@ var WeatherView = {
       this.$.drawer.toggleOpen();
 	}
 
-};
+});

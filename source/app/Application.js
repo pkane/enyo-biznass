@@ -1,15 +1,8 @@
-/*******************************
-	Copyright 2009-2011 USA TODAY. All rights reserved. 
-
-	USA TODAY News Reader
-	- Developed by DotCom IT
-	 
-*******************************/
-
 enyo.kind({
 
-	name: "Application",
-	kind: enyo.Component,
+  name: "Application",
+  kind: "FittableRows",
+  classes: "Application",
 
 	create: function() {
 		this.inherited(arguments);
@@ -27,20 +20,16 @@ enyo.kind({
 
 	components: [
 		
-		{kind: "ApplicationEvents", onWindowActivated: "windowActivated"},
-	
-		{name: "checkconnection", kind: "PalmService", 
-			service: "palm://com.palm.connectionmanager", 
-			method: "getstatus", onSuccess: "onConnectionStatus"},		
+		{name: "ApplicationEvents", onWindowActivated: "windowActivated"},	
 
-		{kind: "AppMenu", components: [
+		{name: "AppMenu", components: [
 			{caption: "About", onclick: "showAbout"}		
 		]},
 
-		{kind: "Pane", flex:1, components: [
-			{name: "slidingPane", kind: "SlidingPane", flex: 1, components: [
+		{name: "Pane", flex:1, components: [
+			{name: "slidingPane", kind: "Panels", flex: 1, components: [
 				
-					{name: "left", flex: 1, kind:"SlidingView", components: [
+					{name: "left", flex: 1, kind:"FittableLayout", components: [
 					
 						{ name: "main", kind: "MainView", flex: 1,
 					    	onShowPhotos: "showPhotos", 
@@ -48,22 +37,23 @@ enyo.kind({
 					    	onShowMarkets: "showMarkets",
 					    	onShowSnapshots: "showSnapshots",
 					    	onShowWeather: "showWeather",
-					    	onShowArticle: "showArticle"}
+					    	onShowArticle: "showArticle"
+					    }
 					
 					]},					
 
-					{name: "right", kind:"SlidingView", peekWidth: 100, width: "550px", onResize: "resize", dismissible: true, components: [
+					{name: "right", kind:"Panels", peekWidth: 100, width: "550px", onResize: "resize", dismissible: true, components: [
 						{kind: "ArticleView", name: "articles", onShowImage: "showImage", flex: 1,lazy: true},
 						{kind: "WeatherView", name: "weather", flex: 1, onChange: "weatherChanged" },
-						{kind: "ScoresView", name: "scores", flex: 1, lazy: true },
-						{kind: "MarketsView", name: "markets", flex: 1, lazy: true },
-						{kind: "SnapshotsView", name: "snapshots", flex: 1, lazy: true }
+						// {kind: "ScoresView", name: "scores", flex: 1, lazy: true },
+						// {kind: "MarketsView", name: "markets", flex: 1, lazy: true },
+						// {kind: "SnapshotsView", name: "snapshots", flex: 1, lazy: true }
 					]}
 					                                                       
 			]},
 			
-			{ name: "about", kind: "AboutView", onClose: "showMain", lazy: true },
-			{ name: "photos", kind: "PhotoGalleryView", onClose: "showMain", lazy: true }
+	// 		{ name: "about", kind: "AboutView", onClose: "showMain", lazy: true },
+	// 		{ name: "photos", kind: "PhotoGalleryView", onClose: "showMain", lazy: true }
 		]}
 	],
 	
