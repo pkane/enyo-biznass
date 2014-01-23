@@ -3,7 +3,7 @@ enyo.kind({
 	kind: "FittableRows",
 	classes: "enyo-fit webservice-sample",
 	components: [
-		{kind: "WebService", name:"yql", url: "http://query.yahooapis.com/v1/public/yql?format=json", onResponse:"processResponse", callbackName: "callback"},
+		{kind: "WebService", name:"yql", url: "http://api-internal.usatoday.com/MobileServices/MArticleService.svc/mcontent/v1/fronts/tech_tablet", onResponse:"processResponse", callbackName: "callback"},
 		{kind: "FittableColumns", classes:"onyx-toolbar-inline", components: [
 			{content: "YQL: "},
 			{kind: "onyx.Input", name:"query", fit:true, value:'select * from upcoming.events where woeid in (select woeid from geo.places where text="Sunnyvale, CA")'},
